@@ -3,7 +3,7 @@ package basics.model;
 public class Student {
 	int id;
 	String name;
-	int sem;
+	int sem; 
 	int average;
 	
 	

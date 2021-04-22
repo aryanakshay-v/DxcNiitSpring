@@ -1,4 +1,4 @@
-package basics;  
+package basics;   
 import basics.dao.StudentDao;
 import basics.dao.StudentDaoImp;
 import basics.model.*;
