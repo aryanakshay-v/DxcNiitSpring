@@ -40,6 +40,11 @@ public class Student {
 	public void setAverage(int average) {
 		this.average = average;
 	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "\ntoStringcalled\t"+name+"\t"+sem+"\t"+average;
+	}
 	
 	
 
