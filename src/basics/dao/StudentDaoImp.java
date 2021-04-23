@@ -29,6 +29,15 @@ public class StudentDaoImp implements StudentDao {
 		System.out.println("no of rows inserted  is "+ no_rows_inserted);
 	}
 
+	@Override
+	public void delRecordById(int id) {
+		String delSql = "DELETE FROM STUDENT WHERE _id = ?";
+		int noRecordsDeleted = jdbcTemplate.update(delSql,id);
+		System.out.println("no of records deleted = "+ noRecordsDeleted);
+		// TODO Auto-generated method stub
+		
+	}
+
 
 
 
