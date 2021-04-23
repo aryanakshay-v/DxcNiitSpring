@@ -12,7 +12,7 @@ public class PlayJdbc {
 		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
 		Student myStudent = new Student(3, "sanjay", 4, 75);
 		Student anotherStudent= new Student(4, "subbu", 1, 90);
-		Student anotherStudent4= new Student(8, "verdu", 5, 75);
+		Student anotherStudent4= new Student(9, "sujatha", 3, 85);
 		/*Student anotherStudent2= new Student(6, "rakesh", 1, 15);
 		Student anotherStudent3= new Student(7, "harish", 8, 16);*/
 		StudentDao studentDao = (StudentDao) context.getBean("studentDao");
