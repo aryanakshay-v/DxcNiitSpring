@@ -1,5 +1,6 @@
 package basics;   
 import org.springframework.context.ApplicationContext;
+
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import basics.dao.StudentDao;
@@ -10,9 +11,13 @@ public class PlayJdbc {
 
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-		StudentDao studentDao = (StudentDao) context.getBean("studentDao");
-		studentDao.delRecordById(8);
+		StudentDaoImp studentDao = (StudentDaoImp) context.getBean("studentDao");
+		//studentDao.delRecordByNameSem("ansari", 4);
 		//insertStudent(studentDao);
+		//studentDao.delRecordById(8);
+		studentDao.cleanUp();
+		
+		
 	}
 
 
