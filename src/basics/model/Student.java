@@ -15,6 +15,11 @@ public class Student {
 		this.average = average;
 	}
 	
+
+	public Student() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	
 	public int getId() {
 		return id;

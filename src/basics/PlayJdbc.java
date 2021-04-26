@@ -13,13 +13,18 @@ public class PlayJdbc {
 
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+		
 		/*StudentDaoHelper helper = context.getBean("studentDaoHelper",StudentDaoHelper.class);
 		helper.insertStudents();
 		*/
 		
 		StudentDaoImp studentDao = (StudentDaoImp) context.getBean("studentDao");
-		List<Student> students = studentDao.getAllStudents();
-		printStudents(students);
+		
+		System.out.println(studentDao.findStudentById(5));
+		
+		
+		/*List<Student> students = studentDao.getAllStudents();
+		printStudents(students);*/
 		
 		
 		//studentDao.delRecordByNameSem("ansari", 4);
